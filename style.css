@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    overflow: hidden;
+}
+header{
+    z-index: 10;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    
+    box-shadow: 0px 5px 100px 5px #929292;
+}
+#logo
+{
+    height: 3rem;
+    width: 3rem;
+    background-color: #eee;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: .5rem .5rem 1rem #cacaca,
+                -.5rem -.5rem 1rem #fff;
+    color: #cacaca;
+}
+#logo h1{
+    margin: 7px 9px;
+}
+#logo:hover{
+    color: #555;
+}
+
+/* header ends here */
+
+#main{
+    /* background-color: grey; */
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    z-index: -999;
+}
+#mainleft
+{
+    width: 50%;
+    height: 89vh;
+    background-color: #eee;
+    position: relative;
+    z-index: 5;
+}
+#leftbody{
+    width: 30rem;
+    height: 18rem;
+    /* background-color: #555; */
+    margin: 150px 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#leftbody h1
+{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#leftbody p{
+   opacity: .8;
+}
+
+#leftbody button{
+    width: 120px;
+    height: 45px;
+    border-radius: 100px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    background-color: #303132;
+    color: #fff;
+    box-shadow: .5rem .5rem 1rem #646464,
+                -.5rem -.5rem 1rem #fff
+}
+
+#leftbody button:hover{
+    background-color: #cacaca;
+    color: #303132;
+}
+
+#mainleft #leftbottom{
+    position: absolute;
+    bottom: 4rem;
+    left: 6.5rem;
+}
+#mainleft #leftbottom a{
+    text-decoration: none;
+    color: #303132;
+    font-size: 24px;
+    letter-spacing: 2rem;
+    opacity: .6;
+}
+#mainleft #leftbottom a:hover{
+    opacity: 1!important;
+}
+
+/* leftmain ends here */
+#mainright
+{
+    width: 50%;
+    height: 89vh;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+}
+
+#mainright img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
